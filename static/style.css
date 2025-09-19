@@ -1,0 +1,374 @@
+/* VARIABLES CSS PERSONALIZADAS*/
+:root {
+  --azul: #05093b;
+  --rojo: #c91715;
+  --rojo-hover: #a31210;
+  --azul-hover: #020629;
+  --amarillo: #dfa507;
+  --amarillo-hover: #d9902e;
+  --sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transicion-suave: all 0.3s ease;
+}
+
+/* ESTILOS GLOBALES */
+body {
+  background-color: #f8f9fa;
+  padding-top: 90px;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  color: var(--azul);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 1rem;
+}
+
+/* Mejora de legibilidad */
+p {
+  margin-bottom: 1rem;
+}
+
+/* NAVEGACIÓN */
+nav.navbar {
+  background-color: var(--azul) !important;
+  min-height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: var(--sombra-suave);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: white !important;
+  transition: var(--transicion-suave);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.02);
+}
+
+/* BOTONES */
+/* Botón primario */
+.btn-primary {
+  background-color: var(--azul);
+  border-color: var(--azul);
+  font-size: 1rem;
+  transition: var(--transicion-suave);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--azul-hover);
+  border-color: var(--azul-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-suave);
+}
+
+/* Botón éxito */
+.btn-success {
+  background-color: var(--azul);
+  border-color: var(--azul);
+  font-size: 1rem;
+  transition: var(--transicion-suave);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: var(--azul-hover);
+  border-color: var(--azul-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-suave);
+}
+
+/* Botón peligro */
+.btn-danger {
+  background-color: var(--rojo);
+  border-color: var(--rojo);
+  font-size: 1rem;
+  transition: var(--transicion-suave);
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: var(--rojo-hover);
+  border-color: var(--rojo-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-suave);
+}
+
+/* Botón editar personalizado */
+.btn-editar {
+  background-color: var(--amarillo);
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  transition: var(--transicion-suave);
+  font-weight: 500;
+}
+
+.btn-editar:hover,
+.btn-editar:focus {
+  background-color: var(--amarillo-hover);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-suave);
+}
+
+/* FORMULARIOS */
+.form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: var(--transicion-suave);
+}
+
+.form-control:focus {
+  border-color: var(--azul);
+  box-shadow: 0 0 0 0.2rem rgba(5, 9, 59, 0.25);
+}
+
+.form-control:invalid {
+  border-color: var(--rojo);
+}
+
+/* TABLAS */
+.table {
+  border-radius: 12px;
+  font-size: 1rem;
+  overflow: hidden;
+  border: none;
+  box-shadow: var(--sombra-suave);
+  background-color: white;
+}
+
+.table thead th {
+  background-color: var(--azul);
+  color: white;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+  font-weight: 600;
+}
+
+.table tbody td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.875rem 0.75rem;
+}
+
+.table tbody tr {
+  transition: var(--transicion-suave);
+}
+
+.table tbody tr:hover {
+  background-color: #f1f3f5;
+  transform: scale(1.01);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fdfdfd;
+}
+
+/* Tabla responsiva mejorada */
+.table-responsive {
+  border-radius: 12px;
+  box-shadow: var(--sombra-suave);
+}
+
+/* CARDS */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: var(--sombra-suave);
+  transition: var(--transicion-suave);
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cards de métricas */
+.card .display-6 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Tarjeta principal de monto */
+#montoTotal {
+  font-size: 2.5rem;
+  color: var(--azul);
+  font-weight: 700;
+}
+
+/* Headers de cards con colores */
+.card-header {
+  border-bottom: none;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+
+/* MODALES */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 12px 12px 0 0;
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 12px 12px;
+  padding: 1.5rem;
+}
+
+/* GRÁFICAS  */
+/* Contenedores de gráficas */
+canvas {
+  border-radius: 8px;
+}
+
+/* Secciones de gráficas */
+.metrics-section .card,
+.distribution-section .card {
+  margin-bottom: 1.5rem;
+}
+
+/* SECCIONES */
+.registration-section,
+.listing-section,
+.metrics-section,
+.distribution-section {
+  margin-bottom: 3rem;
+}
+
+/* Títulos de sección con iconos */
+.registration-section h2,
+.listing-section h2,
+.metrics-section h2,
+.distribution-section h2 {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--azul);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  padding: 1.5rem 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* UTILIDADES PERSONALIZADAS*/
+/* Espaciado adicional */
+.py-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Texto con gradiente */
+.text-gradient {
+  background: linear-gradient(45deg, var(--azul), #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animación suave para elementos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  nav.navbar {
+    min-height: 80px;
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .card .display-6 {
+    font-size: 1.5rem;
+  }
+  
+  #montoTotal {
+    font-size: 2rem;
+  }
+  
+  .table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card .display-6 {
+    font-size: 1.3rem;
+  }
+  
+  .modal-dialog {
+    margin: 1rem;
+  }
+  
+  .table thead th,
+  .table tbody td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.85rem;
+  }
+}
